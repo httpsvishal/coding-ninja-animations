@@ -32,7 +32,7 @@ function App() {
         end: "bottom",         // End animation 500px after the start
         scrub: false,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
-        markers: true
+        // markers: true
       },
     });
 
@@ -46,7 +46,7 @@ function App() {
         end: "bottom",         // End animation 500px after the start
         scrub: false,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
-        markers: true
+        // markers: true
       },
     });
 
@@ -60,7 +60,7 @@ function App() {
         end: "bottom",         // End animation 500px after the start
         scrub: false,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -74,7 +74,7 @@ function App() {
         end: "bottom",         // End animation 500px after the start
         scrub: false,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -87,7 +87,7 @@ function App() {
         end: "bottom",         // End animation 500px after the start
         scrub: false,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -101,7 +101,7 @@ function App() {
         end: "bottom",         // End animation 500px after the start
         scrub: false,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -118,7 +118,7 @@ function App() {
         end: "bottom",         // End animation 500px after the start
         scrub: true,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
-        markers: true,
+        // markers: true,
       },
     });   
 
@@ -132,7 +132,7 @@ function App() {
         end: "bottom",         // End animation 500px after the start
         scrub: false,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -147,7 +147,7 @@ function App() {
         end: "bottom",         // End animation 500px after the start
         scrub: false,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -160,6 +160,8 @@ function App() {
       text5animation.kill();
       studentBoxAnimation.kill();
       dotsAnimation.kill();
+      tieBoxAnimation.kill();
+      text6animation.kill();
     };
   }, []);
 
