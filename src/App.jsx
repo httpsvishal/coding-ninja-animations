@@ -31,8 +31,33 @@ function App() {
   const text18ref = useRef(null);
   const text19ref = useRef(null);
   const text20ref = useRef(null);
+  const splitParaRef = useRef(null);
+
+  const splittedPara = "Prashant Jindal is an accomplished professional with a stellar background in Data Structures and Algorithms (DSA) and a graduate of the prestigious IIT Roorkee, Class of 2019. As the founder of Explorin Academy, Prashant is dedicated to empowering aspiring engineers with the skills and knowledge needed to excel in their careers. With rich industry experience, including serving as an Associate Vice President (AVP) at Credit Suisse, he has honed his expertise in technology and problem-solving at the highest level. Passionate about mentoring and teaching, Prashant leverages his experience to simplify complex concepts, making learning accessible and engaging. His visionary leadership and commitment to excellence make him a cornerstone of the tech education community."
+
+
+
+
 
   useEffect(() => {
+
+    // const words = splitParaRef.current.querySelectorAll('.word');
+
+    gsap.to(".word", {
+      duration: 0.5,
+      opacity: 1,
+      stagger: 2,
+      scrollTrigger: {
+        trigger: splitParaRef.current,
+        start: "top 90%",         // When the top of the element reaches 80%
+        end: "+=500",         // End animation 500px after the start
+        scrub: true,             // Disable scrub so it runs immediately
+        toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
+        // markers: true,
+      },
+    });
+
+
     const text1animation = gsap.to(text1ref.current, {
       scale: 1.5,
       duration: 1,
@@ -392,6 +417,24 @@ function App() {
         </div>
         <span ref={text6ref} className="text-5xl text-white opacity-50 font-semibold">1,400 Alumni in MAANG</span>
         <span className="text-3xl text-white opacity-65 font-semibold">& more in 103/111 Unicorns</span>
+      </div>
+
+      {/* <div className=' text-xl w-full min-h-dvh bg-[#172937] flex justify-center items-center px-16  text-white'>
+        <div className='flex gap-4 flex-wrap'>
+          {splittedPara.split(" ").map((word, index) => { 
+            return <span key={index} className="word text-white opacity-50 text-2xl ">{`${word }`}  </span>
+          })
+          }
+        </div>
+      </div> */}
+
+      <div  className=' text-xl w-full min-h-dvh bg-[#172937] flex justify-center items-center px-16  text-white'>
+        <div ref={splitParaRef} className='flex gap-4 max-w-[1000px] flex-wrap'>
+          {splittedPara.split(" ").map((word, index) => { 
+            return <span key={index} className="word text-white opacity-50 text-2xl ">{`${word }`}  </span>
+          })
+          }
+        </div>
       </div>
 
       <div className="container h-[100vh] bg-[#172937] flex gap-6 justify-center items-center">
