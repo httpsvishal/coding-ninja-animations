@@ -343,9 +343,9 @@ function App() {
         <span className="text-7xl font-semibold text-white">Explorin Academy</span>
       </div>
       <div className="flex flex-col bg-[#172937] gap-12 p-12 items-center min-h-[100vh]">
-      <div className='min-h-screen w-full p-4 flex'>
+        <div className='min-h-screen w-full p-4 flex'>
           <div className='w-1/3 h-screen sticky top-0 flex items-center justify-center'>
-          <img src={prashantSir} alt="" className="h-[450px]" />
+            <img src={prashantSir} alt="" className="h-[450px]" />
           </div>
           <div className='flex flex-col gap-24 w-2/3 items-center space-y-16  '>
             <span ref={text1ref} className="text-2xl py-12 mt-12 text-white opacity-50 font-bold">Are you ready to master DSA and <br /> transform your coding journey?</span>
@@ -357,7 +357,7 @@ function App() {
         </div>
         <div className='min-h-screen w-full p-4 flex'>
           <div className='w-1/3 h-screen sticky top-0 flex items-center justify-center'>
-          <img src={prashantSir} alt="" className="h-[450px]" />
+            <img src={prashantSir} alt="" className="h-[450px]" />
           </div>
           <div className='flex flex-col gap-24 w-2/3 items-center space-y-16  '>
             <span ref={text11ref} className="text-2xl py-12 mt-12 text-white opacity-50 font-bold">Are you ready to master DSA and <br /> transform your coding journey?</span>
@@ -368,18 +368,14 @@ function App() {
           </div>
         </div>
 
-        <div className='min-h-screen w-full p-4 flex'>
-          <div className='w-1/3 h-screen sticky top-0 flex items-center justify-center'>
-          <img src={prashantSir} alt="" className="h-[450px]" />
-          </div>
-          <div className='flex flex-col gap-24 w-2/3 items-center space-y-16  '>
-            <span ref={text16ref} className="text-2xl py-12 mt-12 text-white opacity-50 font-bold">Are you ready to master DSA and <br /> transform your coding journey?</span>
-            <span ref={text17ref} className="text-2xl py-12 text-white font-bold opacity-50">Unlock the secrets of algorithms <br /> with  India’s premier DSA coach</span>
-            <span ref={text18ref} className="text-2xl py-12 text-[#EFA04B] opacity-50 font-bold">Explorin Academy: Your gateway to coding excellence</span>
-            <span ref={text19ref} className='text-2xl py-12 text-[#EFA04B] opacity-50 font-bold'>Step into the world of structured <br /> learning with Explorin Academy.</span>
-            <span ref={text20ref} className="text-2xl py-12 text-[#EFA04B] opacity-50 font-bold">Learn DSA the way it’s meant to be — <br /> practical, engaging, and effective.</span>
-          </div>
-        </div>
+        <img src={prashantSir} alt="" className="h-[450px]" />
+
+        <span ref={text16ref} className="text-2xl py-12 mt-12 text-white opacity-50 font-bold">Are you ready to master DSA and <br /> transform your coding journey?</span>
+        <span ref={text17ref} className="text-2xl py-12 text-white font-bold opacity-50">Unlock the secrets of algorithms <br /> with  India’s premier DSA coach</span>
+        <span ref={text18ref} className="text-2xl py-12 text-[#EFA04B] opacity-50 font-bold">Explorin Academy: Your gateway to coding excellence</span>
+        <span ref={text19ref} className='text-2xl py-12 text-[#EFA04B] opacity-50 font-bold'>Step into the world of structured <br /> learning with Explorin Academy.</span>
+        <span ref={text20ref} className="text-2xl py-12 text-[#EFA04B] opacity-50 font-bold">Learn DSA the way it’s meant to be — <br /> practical, engaging, and effective.</span>
+
         <div ref={StudentBoxRef} className='h-[100px] w-[100px] border rounded-xl border-none flex justify-center items-center bg-white opacity-50 '>
           <img src={student} alt="" />
         </div>
@@ -403,7 +399,7 @@ function App() {
         <span className="text-7xl font-semibold text-white">Explorin Academy</span>
       </div>
 
-     
+
     </>
   )
 }
