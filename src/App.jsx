@@ -370,11 +370,11 @@ function App() {
 
         <img src={prashantSir} alt="" className="h-[450px]" />
 
-        <span ref={text16ref} className="text-2xl py-12 mt-12 text-white opacity-50 font-bold">Are you ready to master DSA and <br /> transform your coding journey?</span>
-        <span ref={text17ref} className="text-2xl py-12 text-white font-bold opacity-50">Unlock the secrets of algorithms <br /> with  India’s premier DSA coach</span>
-        <span ref={text18ref} className="text-2xl py-12 text-[#EFA04B] opacity-50 font-bold">Explorin Academy: Your gateway to coding excellence</span>
-        <span ref={text19ref} className='text-2xl py-12 text-[#EFA04B] opacity-50 font-bold'>Step into the world of structured <br /> learning with Explorin Academy.</span>
-        <span ref={text20ref} className="text-2xl py-12 text-[#EFA04B] opacity-50 font-bold">Learn DSA the way it’s meant to be — <br /> practical, engaging, and effective.</span>
+        <span ref={text16ref} className="text-2xl py-6 mt-12 text-white opacity-50 font-bold">Are you ready to master DSA and <br /> transform your coding journey?</span>
+        <span ref={text17ref} className="text-2xl py-6 text-white font-bold opacity-50">Unlock the secrets of algorithms <br /> with  India’s premier DSA coach</span>
+        <span ref={text18ref} className="text-2xl py-6 text-[#EFA04B] opacity-50 font-bold">Explorin Academy: Your gateway to coding excellence</span>
+        <span ref={text19ref} className='text-2xl py-6 text-[#EFA04B] opacity-50 font-bold'>Step into the world of structured <br /> learning with Explorin Academy.</span>
+        <span ref={text20ref} className="text-2xl py-6 text-[#EFA04B] opacity-50 font-bold">Learn DSA the way it’s meant to be — <br /> practical, engaging, and effective.</span>
 
         <div ref={StudentBoxRef} className='h-[100px] w-[100px] border rounded-xl border-none flex justify-center items-center bg-white opacity-50 '>
           <img src={student} alt="" />
