@@ -21,6 +21,16 @@ function App() {
   const dotsRef = useRef(null);
   const tieBoxRef = useRef(null);
   const text6ref = useRef(null);
+  const text11ref = useRef(null);
+  const text12ref = useRef(null);
+  const text13ref = useRef(null);
+  const text14ref = useRef(null);
+  const text15ref = useRef(null);
+  const text16ref = useRef(null);
+  const text17ref = useRef(null);
+  const text18ref = useRef(null);
+  const text19ref = useRef(null);
+  const text20ref = useRef(null);
 
   useEffect(() => {
     const text1animation = gsap.to(text1ref.current, {
@@ -153,6 +163,155 @@ function App() {
       },
     });
 
+    const text11animation = gsap.to(text11ref.current, {
+      scale: 1.5,
+      duration: 1,
+      opacity: 1,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: text11ref.current,
+        start: "top 50%",         // When the top of the element reaches 80%  
+        end: "bottom",         // End animation 500px after the start
+        scrub: false,             // Disable scrub so it runs immediately
+        toggleActions: "play none none reverse",  // Play when the element comes into view,
+        // markers: true,
+        },
+    });
+
+    const text12animation = gsap.to(text12ref.current, {
+      scale: 1.5,
+      duration: 1,
+      opacity: 1,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: text12ref.current,
+        start: "top 50%",         // When the top of the element reaches 80%
+        end: "bottom",         // End animation 500px after the start
+        scrub: false,             // Disable scrub so it runs immediately
+        toggleActions: "play none none reverse",  // Play when the element comes into view,
+        // markers: true,
+      },
+      });
+
+      const text13animation = gsap.to(text13ref.current, {
+        scale: 1.5,
+        duration: 1,
+        opacity: 1,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: text13ref.current,
+          start: "top 50%",         // When the top of the element reaches 80%
+          end: "bottom",         // End animation 500px after the start
+          scrub: false,             // Disable scrub so it runs immediately
+          toggleActions: "play none none reverse",  // Play when the element comes into view,
+          // markers: true,
+        },
+        });
+
+        const text14animation = gsap.to(text14ref.current, {
+          scale: 1.5,
+          duration: 1,
+          opacity: 1,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: text14ref.current,
+            start: "top 50%",         // When the top of the element reaches 80%
+            end: "bottom",         // End animation 500px after the start
+            scrub: false,             // Disable scrub so it runs immediately
+            toggleActions: "play none none reverse",  // Play when the element comes into view,
+            // markers: true,
+          },
+          });
+
+          const text15animation = gsap.to(text15ref.current, {
+            scale: 1.5,
+            duration: 1,
+            opacity: 1,
+            ease: "power1.inOut",
+            scrollTrigger: {
+              trigger: text15ref.current,
+              start: "top 50%",         // When the top of the element reaches 80%
+              end: "bottom",         // End animation 500px after the start
+              scrub: false,             // Disable scrub so it runs immediately
+              toggleActions: "play none none reverse",  // Play when the element comes into view,
+              // markers: true,
+            },
+            });
+
+            const text16animation = gsap.to(text16ref.current, {
+              scale: 1.5,
+              duration: 1,
+              opacity: 1,
+              ease: "power1.inOut",
+              scrollTrigger: {
+                trigger: text16ref.current,
+                start: "top 50%",         // When the top of the element reaches 80%
+                end: "bottom",         // End animation 500px after the start
+                scrub: false,             // Disable scrub so it runs immediately
+                toggleActions: "play none none reverse",  // Play when the element comes into view,
+                // markers: true,
+              },
+              });
+
+              const text17animation = gsap.to(text17ref.current, {
+                scale: 1.5,
+                duration: 1,
+                opacity: 1,
+                ease: "power1.inOut",
+                scrollTrigger: {
+                  trigger: text17ref.current,
+                  start: "top 50%",         // When the top of the element reaches 80%
+                  end: "bottom",         // End animation 500px after the start
+                  scrub: false,             // Disable scrub so it runs immediately
+                  toggleActions: "play none none reverse",  // Play when the element comes into view,
+                  // markers: true,
+                },
+                });
+
+                const text18animation = gsap.to(text18ref.current, {
+                  scale: 1.5,
+                  duration: 1,
+                  opacity: 1,
+                  ease: "power1.inOut",
+                  scrollTrigger: {
+                    trigger: text18ref.current,
+                    start: "top 50%",         // When the top of the element reaches 80%
+                    end: "bottom",         // End animation 500px after the start
+                    scrub: false,             // Disable scrub so it runs immediately
+                    toggleActions: "play none none reverse",  // Play when the element comes into view,
+                    // markers: true,
+                  },
+                  });
+
+                  const text19animation = gsap.to(text19ref.current, {
+                    scale: 1.5,
+                    duration: 1,
+                    opacity: 1,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                      trigger: text19ref.current,
+                      start: "top 50%",         // When the top of the element reaches 80%
+                      end: "bottom",         // End animation 500px after the start
+                      scrub: false,             // Disable scrub so it runs immediately
+                      toggleActions: "play none none reverse",  // Play when the element comes into view,
+                      // markers: true,
+                    },
+                    });
+
+                    const text20animation = gsap.to(text20ref.current, {
+                      scale: 1.5,
+                      duration: 1,
+                      opacity: 1,
+                      ease: "power1.inOut",
+                      scrollTrigger: {
+                        trigger: text20ref.current,
+                        start: "top 50%",         // When the top of the element reaches 80%
+                        end: "bottom",         // End animation 500px after the start
+                        scrub: false,             // Disable scrub so it runs immediately
+                        toggleActions: "play none none reverse",  // Play when the element comes into view,
+                        // markers: true,
+                      },
+                      });
 
     return () => {
       text1animation.kill(); // Kill the GSAP animation
@@ -164,6 +323,11 @@ function App() {
       dotsAnimation.kill();
       tieBoxAnimation.kill();
       text6animation.kill();
+      text11animation.kill();
+      text12animation.kill();
+      text13animation.kill();
+      text14animation.kill();
+      text15animation.kill();
     };
   }, []);
 
@@ -185,6 +349,21 @@ function App() {
         <span ref={text3ref} className="text-2xl text-[#EFA04B] opacity-50 font-bold">Explorin Academy: Your gateway to coding excellence</span>
         <span ref={text4ref} className='text-2xl text-[#EFA04B] opacity-50 font-bold'>Step into the world of structured <br /> learning with Explorin Academy.</span>
         <span ref={text5ref} className="text-2xl text-[#EFA04B] opacity-50 font-bold">Learn DSA the way it’s meant to be — <br /> practical, engaging, and effective.</span>
+
+        <img src={prashantSir} alt="" className="h-[350px] mt-24 " />
+        <span ref={text11ref} className="text-2xl mt-12 text-white opacity-50 font-bold">Are you ready to master DSA and <br /> transform your coding journey?</span>
+        <span ref={text12ref} className="text-2xl text-white font-bold opacity-50">Unlock the secrets of algorithms <br /> with  India’s premier DSA coach</span>
+        <span ref={text13ref} className="text-2xl text-[#EFA04B] opacity-50 font-bold">Explorin Academy: Your gateway to coding excellence</span>
+        <span ref={text14ref} className='text-2xl text-[#EFA04B] opacity-50 font-bold'>Step into the world of structured <br /> learning with Explorin Academy.</span>
+        <span ref={text15ref} className="text-2xl text-[#EFA04B] opacity-50 font-bold">Learn DSA the way it’s meant to be — <br /> practical, engaging, and effective.</span>
+        
+        <img src={prashantSir} alt="" className="h-[350px] mt-24 " />
+        <span ref={text16ref} className="text-2xl mt-12 text-white opacity-50 font-bold">Are you ready to master DSA and <br /> transform your coding journey?</span>
+        <span ref={text17ref} className="text-2xl text-white font-bold opacity-50">Unlock the secrets of algorithms <br /> with  India’s premier DSA coach</span>
+        <span ref={text18ref} className="text-2xl text-[#EFA04B] opacity-50 font-bold">Explorin Academy: Your gateway to coding excellence</span>
+        <span ref={text19ref} className='text-2xl text-[#EFA04B] opacity-50 font-bold'>Step into the world of structured <br /> learning with Explorin Academy.</span>
+        <span ref={text20ref} className="text-2xl text-[#EFA04B] opacity-50 font-bold">Learn DSA the way it’s meant to be — <br /> practical, engaging, and effective.</span>
+
         <div ref={StudentBoxRef} className='h-[100px] w-[100px] border rounded-xl border-none flex justify-center items-center bg-white opacity-50 '>
           <img src={student} alt="" />
         </div>
@@ -202,6 +381,7 @@ function App() {
         <span ref={text6ref} className="text-5xl text-white opacity-50 font-semibold">1,400 Alumni in MAANG</span>
         <span  className="text-3xl text-white opacity-65 font-semibold">& more in 103/111 Unicorns</span>
       </div>
+      
       <div className="container h-[100vh] bg-[#172937] flex gap-6 justify-center items-center">
         <img src={logo} className="h-[200px] border-none rounded-full" alt="" />
         <span className="text-7xl font-semibold text-white">Explorin Academy</span>
