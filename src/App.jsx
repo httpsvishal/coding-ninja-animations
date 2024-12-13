@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import student from './assets/student.svg'
 import tie from './assets/tie.svg'
+import prashantSir from './assets/prashantSir.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,7 +29,7 @@ function App() {
       opacity: 1,
       scrollTrigger: {
         trigger: text1ref.current,
-        start: "top 80%",         // When the top of the element reaches 80% from the top of the viewport
+        start: "top 50%",         // When the top of the element reaches 80% from the top of the viewport
         end: "bottom",         // End animation 500px after the start
         scrub: false,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
@@ -42,7 +43,7 @@ function App() {
       opacity: 1,
       scrollTrigger: {
         trigger: text2ref.current,
-        start: "top 80%",         // When the top of the element reaches 80% from the top of the viewport
+        start: "top 50%",         // When the top of the element reaches 80% from the top of the viewport
         end: "bottom",         // End animation 500px after the start
         scrub: false,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
@@ -56,7 +57,7 @@ function App() {
       opacity: 1,
       scrollTrigger: {
         trigger: text3ref.current,
-        start: "top 80%",         // When the top of the element reaches 80% from the top of the viewport
+        start: "top 50%",         // When the top of the element reaches 80% from the top of the viewport
         end: "bottom",         // End animation 500px after the start
         scrub: false,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
@@ -70,7 +71,7 @@ function App() {
       opacity: 1,
       scrollTrigger: {
         trigger: text4ref.current,
-        start: "top 80%",         // When the top of the element reaches 80%
+        start: "top 50%",         // When the top of the element reaches 80%
         end: "bottom",         // End animation 500px after the start
         scrub: false,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
@@ -81,9 +82,10 @@ function App() {
     const text5animation = gsap.to(text5ref.current, {
       scale: 1.5,
       duration: 1,
+      opacity: 1,
       scrollTrigger: {
         trigger: text5ref.current,
-        start: "top 80%",         // When the top of the element reaches 80%
+        start: "top 50%",         // When the top of the element reaches 80%
         end: "bottom",         // End animation 500px after the start
         scrub: false,             // Disable scrub so it runs immediately
         toggleActions: "play none none reverse",  // Play when the element comes into view, reverse when it leaves
@@ -172,16 +174,17 @@ function App() {
   return (
 
     <>
-      <div className="container h-[100vh] bg-white flex gap-6 justify-center items-center">
-        <img src={logo} className="h-[200px] border rounded-full" alt="" />
-        <span className="text-7xl font-semibold text-[#030816]">Explorin Academy</span>
+      <div className="container h-[100vh] bg-[#172937] flex gap-6 justify-center items-center">
+        <img src={logo} className="h-[200px] border-none rounded-full" alt="" />
+        <span className="text-7xl font-semibold text-white">Explorin Academy</span>
       </div>
-      <div className="flex flex-col gap-8 p-12 items-center min-h-[100vh]">
-        <span ref={text1ref} className="text-4xl text-white opacity-50 font-bold">4+ years of</span>
-        <span ref={text2ref} className="text-3xl text-white font-bold opacity-50">shaping</span>
-        <span ref={text3ref} className="text-3xl text-white opacity-50 font-bold">tech careers</span>
-        <span ref={text4ref} className='text-5xl mt-12 text-white opacity-50 font-semibold'>1.5 Lac+ learners</span>
-        <span ref={text5ref} className="text-2xl text-white opacity-50 font-semibold">cracked dream roles at top tech companies</span>
+      <div className="flex flex-col bg-[#172937] gap-12 p-12 items-center min-h-[100vh]">
+        <img src={prashantSir} alt="" className="h-[350px]" />
+        <span ref={text1ref} className="text-2xl mt-12 text-white opacity-50 font-bold">Are you ready to master DSA and <br /> transform your coding journey?</span>
+        <span ref={text2ref} className="text-2xl text-white font-bold opacity-50">Unlock the secrets of algorithms <br /> with  India’s premier DSA coach</span>
+        <span ref={text3ref} className="text-2xl text-[#EFA04B] opacity-50 font-bold">Explorin Academy: Your gateway to coding excellence</span>
+        <span ref={text4ref} className='text-2xl text-[#EFA04B] opacity-50 font-bold'>Step into the world of structured <br /> learning with Explorin Academy.</span>
+        <span ref={text5ref} className="text-2xl text-[#EFA04B] opacity-50 font-bold">Learn DSA the way it’s meant to be — <br /> practical, engaging, and effective.</span>
         <div ref={StudentBoxRef} className='h-[100px] w-[100px] border rounded-xl border-none flex justify-center items-center bg-white opacity-50 '>
           <img src={student} alt="" />
         </div>
@@ -199,9 +202,9 @@ function App() {
         <span ref={text6ref} className="text-5xl text-white opacity-50 font-semibold">1,400 Alumni in MAANG</span>
         <span  className="text-3xl text-white opacity-65 font-semibold">& more in 103/111 Unicorns</span>
       </div>
-      <div className="container h-[100vh] bg-white flex gap-6 justify-center items-center">
-        <img src={logo} className="h-[200px] border rounded-full" alt="" />
-        <span className="text-7xl font-semibold text-[#030816]">Explorin Academy</span>
+      <div className="container h-[100vh] bg-[#172937] flex gap-6 justify-center items-center">
+        <img src={logo} className="h-[200px] border-none rounded-full" alt="" />
+        <span className="text-7xl font-semibold text-white">Explorin Academy</span>
       </div>
     </>
   )
